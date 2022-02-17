@@ -150,7 +150,7 @@ Native ports
         :rtype: bytes
 
         Read *size* bytes from the serial port. If a timeout is set it may
-        return less characters as requested. With no timeout it will block
+        return fewer characters than requested. With no timeout it will block
         until the requested number of bytes is read.
 
         .. versionchanged:: 2.5
@@ -166,7 +166,7 @@ Native ports
 
         Read until an expected sequence is found ('\\n' by default), the size
         is exceeded or until timeout occurs. If a timeout is set it may
-        return less characters as requested. With no timeout it will block
+        return fewer characters than requested. With no timeout it will block
         until the requested number of bytes is read.
 
         .. versionchanged:: 2.5
@@ -486,11 +486,11 @@ Native ports
 
     .. method:: readline(size=-1)
 
-        Provided via :meth:`io.IOBase.readline`
+        Provided via :meth:`io.IOBase.readline` See also ref:`shortintro_readline`.
 
     .. method:: readlines(hint=-1)
 
-        Provided via :meth:`io.IOBase.readlines`
+        Provided via :meth:`io.IOBase.readlines`. See also ref:`shortintro_readline`.
 
     .. method:: writelines(lines)
 
@@ -1188,7 +1188,7 @@ This module provides classes to simplify working with threads and protocols.
 
     .. attribute:: UNICODE_HANDLING = 'replace'
 
-        Unicode error handly policy.
+        Unicode error handling policy.
 
     .. method:: handle_packet(packet)
 
